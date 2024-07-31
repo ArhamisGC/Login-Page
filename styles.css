@@ -8,10 +8,61 @@ body{
 }
 
 .container{
+    display: flex;
+    position: relative;
     background-color: white;
     align-self: center;
-    position: relative;
     width: 768px;
     border-radius: 30px;
-    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.35);;
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    /*padding-top: 30px;*/
+}
+
+
+.signIn{
+    background-color: pink;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+
+.signIn input{
+    background-color: #efb6d2;
+    width: 70%;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.signIn button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.logIn{
+    background-color: aquamarine;
+    width: 50%;
+}
+
+.logIn h1{
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social a{
+    border: 1px solid #ccc;
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+    margin:0 3px; /* Ver esto */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
