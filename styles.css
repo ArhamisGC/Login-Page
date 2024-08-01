@@ -28,7 +28,6 @@ a:visited{
     border-radius: 30px;
     box-shadow:  0 5px 15px rgba(0, 0, 0, 0.35);
     overflow: hidden;
-    /*padding-top: 30px;*/
 }
 
 .signIn, .logIn{
@@ -65,10 +64,6 @@ a:visited{
     font-weight: 600;
 }
 
-.logIn h1{
-    text-align: center;
-}
-
 .social{
     display: flex;
     justify-content: center;
@@ -80,7 +75,7 @@ a:visited{
     border-radius: 30%;
     width: 40px;
     height: 40px;
-    margin:0 3px; /* Ver esto */
+    margin:0 3px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
