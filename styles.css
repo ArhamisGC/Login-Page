@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 body{
     background-color: #c9d6ff;
     background: linear-gradient(to right, #e2e2e2, #c9d6ff);
@@ -5,6 +7,16 @@ body{
     align-content: center;
     align-items: center;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #000000;
+    text-decoration: none;
 }
 
 .container{
@@ -19,9 +31,8 @@ body{
     /*padding-top: 30px;*/
 }
 
-
-.signIn{
-    background-color: pink;
+.signIn, .logIn{
+    z-index: 1;
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -29,8 +40,12 @@ body{
     width: 50%;
 }
 
+.signIn h1{
+    margin-top: 70px;
+}
+
 .signIn input{
-    background-color: #efb6d2;
+    background-color: #eee;
     width: 70%;
     height: 25px;
     border-radius: 10px;
@@ -38,13 +53,16 @@ body{
 }
 
 .signIn button{
+    background-color:  #512da8;
+    color: white;
     margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.logIn{
-    background-color: aquamarine;
-    width: 50%;
+    margin-bottom: 70px;
+    padding: 10px 45px;
+    border-radius: 10px;
+    border:none;
+    cursor:pointer;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .logIn h1{
@@ -57,6 +75,7 @@ body{
     align-items: center;
 }
 .social a{
+    color: #000000;
     border: 1px solid #ccc;
     border-radius: 30%;
     width: 40px;
@@ -65,4 +84,58 @@ body{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+}
+
+.overlap{
+    position: absolute;
+    z-index: 1000;
+    width: 50%;
+    height: 100%;
+    left:50%;
+    border-radius: 150px 0 0 100px;
+    text-align: center;
+
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle{
+    background-color: #512da8;
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transform: translateX(0);
+    transition: all 0.9s ease-in-out;
+}
+
+.container.active .overlap{
+    background-color: #512da8;
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+.overlap-right{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.overlap-left {
+
+}
+
+.overlap-right button , .overlap-left button{
+    background-color:  #512da8;
+    color: white;
+    margin-bottom: 70px;
+    padding: 10px 45px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: white;
+    cursor:pointer;
+    font-size: 12px;
+    font-weight: 600;
 }
