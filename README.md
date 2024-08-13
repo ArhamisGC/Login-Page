@@ -14,7 +14,7 @@ This project is built using the following technologies:
 ## 🌐 Use it Online
 You can use it directly in your browser by visiting the following URL:
 
-[Weather App](https://arhamisgc.github.io/Login-Page/)
+[Login Page](https://arhamisgc.github.io/Login-Page/)
   
 ## 💻 Screenshots
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/01bc1c4c-4ad7-4368-b4aa-b830e287e4d6">
